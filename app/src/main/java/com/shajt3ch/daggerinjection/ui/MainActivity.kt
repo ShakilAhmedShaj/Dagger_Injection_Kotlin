@@ -1,7 +1,10 @@
-package com.shajt3ch.daggerinjection
+package com.shajt3ch.daggerinjection.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.shajt3ch.daggerinjection.model.Players
+import com.shajt3ch.daggerinjection.R
+import com.shajt3ch.daggerinjection.model.Team
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

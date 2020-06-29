@@ -1,4 +1,4 @@
-package com.shajt3ch.daggerinjection
+package com.shajt3ch.daggerinjection.model
 
 class Players {
 
