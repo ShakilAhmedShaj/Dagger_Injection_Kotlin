@@ -19,13 +19,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        val players = Players()
-//        val team = Team(players)
 
         btn_get_team.setOnClickListener {
 
 
             tv_player_name.text = team.getBestEleven()
+            tv_coach_name.text = team.getCoachName()
 
 
         }
