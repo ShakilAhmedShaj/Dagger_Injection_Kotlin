@@ -1,8 +1,8 @@
 package com.shajt3ch.daggerinjection.model
 
-import com.shajt3ch.daggerinjection.model.Players
+import javax.inject.Inject
 
-class Team(val players: Players) {
+class Team @Inject constructor(val players: Players) {
 
     fun getBestEleven(): String = players.getPlayerName()
 

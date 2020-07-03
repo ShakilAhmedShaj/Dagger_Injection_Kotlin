@@ -1,6 +1,7 @@
 package com.shajt3ch.daggerinjection.di
 
 import com.shajt3ch.daggerinjection.App
+import com.shajt3ch.daggerinjection.di.modules.ActivityBuilderModule
 import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
@@ -12,9 +13,10 @@ import dagger.android.support.AndroidSupportInjectionModule
 
 @Component(
 
-    modules = [AndroidSupportInjectionModule::class
+    modules = [
+        AndroidSupportInjectionModule::class,
+        ActivityBuilderModule::class
     ]
-
 
 )
 interface AppComponent : AndroidInjector<App>

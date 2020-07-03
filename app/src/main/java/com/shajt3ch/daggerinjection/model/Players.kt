@@ -1,6 +1,8 @@
 package com.shajt3ch.daggerinjection.model
 
-class Players {
+import javax.inject.Inject
+
+class Players @Inject constructor() {
 
     fun getPlayerName() :String{
 
