@@ -2,6 +2,7 @@ package com.shajt3ch.daggerinjection.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.shajt3ch.daggerinjection.R
 import com.shajt3ch.daggerinjection.model.Team
 import dagger.android.AndroidInjection
@@ -22,10 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         btn_get_team.setOnClickListener {
 
-
             tv_player_name.text = team.getBestEleven()
             tv_coach_name.text = team.getCoachName()
 
+            Log.d("check_instance", team.toString())
 
         }
 
