@@ -4,15 +4,14 @@ package com.shajt3ch.daggerinjection.model
  * Created by Shakil Ahmed Shaj on 03,July,2020.
  * shakilahmedshaj@gmail.com
  */
-class Coach private constructor() {
+class Coach private constructor() : TeamCoach {
 
-    companion object{
+    companion object {
         fun getCoachInstance(): Coach = Coach();
     }
 
-    fun getName(): String = "Russel Domingo"
+    override fun getName(): String = "Russel Domingo"
 
-    fun getSpeciality(): String = "Batting"
-
+    override fun getSpeciality(): String = "Batting"
 
 }

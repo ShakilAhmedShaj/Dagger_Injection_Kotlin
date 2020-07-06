@@ -4,7 +4,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class Team @Inject constructor(val players: Players, val coach: Coach) {
+class Team @Inject constructor(val players: Players, val coach: TeamCoach) {
 
 /*
     companion object {
